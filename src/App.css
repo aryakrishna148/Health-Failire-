@@ -1,0 +1,95 @@
+/* Page background */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+}
+#root {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main container to center everything */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; /* Changed from height to min-height */
+  width: 100%;       /* Ensure it spans the full width */
+  margin: 0
+}
+
+/* Title box */
+.title-box {
+  background: white;
+  padding: 20px 40px;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+}
+
+.title-box h1 {
+  margin: 0;
+  font-size: 38px;
+  color: #333;
+  text-align: center;
+}
+
+/* Form card */
+.card {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(12px);          
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 40px;
+  width: 350px;
+  border-radius: 15px;
+  box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Input fields */
+.card input {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+
+  font-size: 14px;
+}
+.card input:focus {
+  outline: none;
+  border-color: #ff6b6b;
+  box-shadow: 0 0 8px rgba(255, 107, 107, 0.3);
+  transition: all 0.3s ease;
+}
+
+/* Predict button */
+.card button {
+  padding: 12px;
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background: #ee5253;
+}
+
+/* Result text */
+.result {
+  text-align: center;
+  margin-top: 10px;
+}
